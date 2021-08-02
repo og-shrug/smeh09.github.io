@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Survey form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey form</h1>
+        <p id="description">Thanks for your time filling this form! </p>
+    </header>
+    <form id="survey-form">
+        <div class="form-control">
+            <div class="form-work" id="form-name">
+                <label for="name" class="label" id="name-label">Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name" required class="form-control">
+            </div>
+            <div class="form-work" id="form-email">
+                <label for="email" class="label" id="email-label">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Your email" required class="form-control">
+            </div>
+            <div class="form-work" id="form-age">
+                <label for="age" class="label" id="age-label">Age (optional)</label><br>
+                <input type="number" name="age" id="age" min="7" max="99" placeholder="Age" class="form-control">
+            </div>
+            <div class="form-work" id="comments">
+                <label for="comments" class="label" id="comment-label">Any comments or suggestions? </label><br>
+                <textarea name="comments" id="comments" placeholder="Enter your comments here" class="form-control"></textarea>
+            </div>
+            <button type="submit" id="submit-button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
