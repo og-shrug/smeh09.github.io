@@ -51,6 +51,13 @@ input {
     height: 2rem;
 }
 
+#survey-form {
+    background-color: var(--color-dark-green);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
 textarea {
     height: 7rem;
     resize: none;
@@ -71,6 +78,10 @@ textarea {
     margin-bottom: 1rem;
 }
 
+.form-work label {
+    color: var(--color-white)
+}
+
 button {
     width: 7rem;
     height: 2rem;
@@ -78,10 +89,8 @@ button {
     border: none;
     background-color: black;
     color: white;
-    transition: 0.4s;
 }
 
 button:hover {
-    background-color: white;
-    color: black;
+    cursor: pointer;
 }
