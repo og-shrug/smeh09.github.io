@@ -125,7 +125,7 @@ main {
 }
 
 #how-it-works iframe {
-    width: 30vw;
+    width: 40vw;
 }
 
 @media (max-width: 900px) {
@@ -135,8 +135,49 @@ main {
 }
 
 footer {
+    margin-top: 30px;;
     background-color: #000;
     color: #eee;
     text-align: center;
     font-weight: 500;
+    padding: 20px;
+}
+
+#pricings {
+    text-align: center;
+}
+
+.price {
+    width: 24rem;
+    margin: auto;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 400px) {
+    .price {
+        width: 80%;
+    }
+}
+
+.price-text {
+    text-align: center;
+}
+
+#price1 {
+    background: #eee;
+    margin-bottom: 30px;
+}
+
+#price2 {
+    background: cornsilk;
+    margin-bottom: 30px;
+}
+
+#price3 {
+    background: ghostwhite;
+}
+
+.pricing {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
