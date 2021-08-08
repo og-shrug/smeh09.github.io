@@ -101,6 +101,13 @@ input {
     margin-bottom: 15px;
 }
 
+@media screen and (max-width: 600px) {
+    input {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+}
+
 button, #make-account {
     padding: 5px;
     padding-right: 15px;
@@ -110,7 +117,15 @@ button, #make-account {
     background-color: var(--primary-blue);
     border: none;
     border-radius: 5px;
-    transition: 0.4s;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+    button, #make-account {
+        padding: 3px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
 }
 
 button:hover, #make-account:hover {
