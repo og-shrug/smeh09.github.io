@@ -23,10 +23,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: var(--primary-orange);
-}
-
 header {
     background-color: var(--primary-grey);
     top: 0;
@@ -46,12 +42,6 @@ header a {
     font-size: 17px;
     transition: 0.36s;
     border-radius: 8px;
-}
-
-@media screen and (max-width: 800px) {
-    header a {
-        transition: 1s;
-    }
 }
 
 header a:hover {
@@ -87,32 +77,97 @@ main {
     }
 }
 
-#sign-in-form {
+.container {
     text-align: center;
-    margin-bottom: 50px;
+    display: flex;
+    padding-top: 3rem;
 }
 
-label {
-    margin-bottom: 10px;
+.blog {
+    border-radius: 5px;
+    width: 20%;
+    height: 15rem;
+    margin: auto;
+    border: 1px solid black;
+    transition: 0.2s;
+    cursor: pointer;
+    background: white;
 }
 
-input {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 2.5px;
-    padding-bottom: 2.5px;
-    margin-bottom: 15px;
+#blogs {
+    padding-bottom: 50px;
 }
 
-@media screen and (max-width: 600px) {
-    input {
-        padding-right: 25px;
-        padding-left: 25px;
+.heading {
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1270px) {
+    .heading {
+        font-size: 1.2rem;
     }
 }
 
+.blog:hover {
+    box-shadow: 2px 5px 4px #888888;
+}
 
-button, #make-account {
+@media screen and (max-width: 950px) {
+    .heading {
+        font-size: 1rem !important;
+    }
+    .feature-text {
+        font-size: 0.9rem;
+    }
+    .feature {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .blog {
+        width: 50%;
+    }
+
+    .container {
+        display: block;
+    }
+    #blog-1 {
+        margin-bottom: 30px;
+    }
+    
+    #blog-2 {
+        margin-bottom: 30px;
+    }
+    
+    #blog-3 {
+        margin-bottom: 30px;
+    }
+}
+
+.blog-text {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.heading {
+    background-color: var(--secondary-grey);
+}
+
+#blog-heading {
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    #blog-heading {
+        font-size: 1.6rem;
+    }
+}
+
+.blog-link, button {
+    text-decoration: none;
+    color: var(--primary-black);
     padding: 5px;
     padding-right: 15px;
     padding-left: 15px;
@@ -124,38 +179,27 @@ button, #make-account {
     transition: 0.4s;
 }
 
-@media screen and (max-width: 600px) {
-    button, #make-account {
-        padding: 3px;
-        padding-right: 8px;
-        padding-left: 8px;
-    }
-}
-
-button:hover, #make-account:hover {
-    box-shadow: 1px 2px 3px var(--primary-black);
-}
-
-#container {
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 50px;
-}
-
-h4 {
+.feature-text {
     margin-bottom: 20px;
 }
 
-#make-account {
-    text-decoration: none;
-    font-size: 15px;
-    color: var(--primary-black);
+.blog-link:hover, button:hover {
+    box-shadow: 1px 2px 3px var(--primary-black);
+}
+
+#your-blog {
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+button {
+    margin-bottom: 20px;
 }
 
 footer {
     text-align: center;
-    padding: 10%;
+    padding: 5%;
     color: var(--primary-white);
     font-size: 20px;
     font-weight: 500;

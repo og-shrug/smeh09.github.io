@@ -149,12 +149,6 @@ h4 {
     color: var(--primary-black);
 }
 
-@media screen and (max-width: 600px) {
-    #container {
-        text-align: left;
-    }
-}
-
 footer {
     text-align: center;
     padding: 10%;
