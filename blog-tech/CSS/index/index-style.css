@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300&display=swap');
 
 :root {
     --primary-grey: rgb(54, 57, 63);
@@ -194,6 +195,7 @@ main {
 
 .list-text {
     margin-bottom: 13px;
+    font-family: Hahmlet;
 }
 
 .container {
@@ -231,6 +233,10 @@ main {
 .feature:hover {
     box-shadow: 2px 5px 4px #888888;
     transform: translate(0, -10px);
+}
+
+.feature-descr {
+    font-family: Hahmlet !important;
 }
 
 @media screen and (max-width: 950px) {
