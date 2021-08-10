@@ -163,10 +163,31 @@ main {
 }
 
 #how-we-best {
-    text-align: left;
+    margin: auto;
     padding-bottom: 70px;
     padding-left: 70px;
     padding-right: 70px;
+    width: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+    #how-we-best {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #how-we-best {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #how-we-best {
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 #heading-text {
@@ -180,29 +201,10 @@ main {
 
 #left-text {
     margin-top: 70px;
-    width: 70%;
     border-radius: 8px;
     padding: 20px;
     background-color: var(--secondary-grey);
     margin: auto;
-}
-
-@media screen and (max-width: 1000px) {
-    #left-text {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    #left-text {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    #left-text {
-        width: 100%;
-    }
 }
 
 .list-text {
