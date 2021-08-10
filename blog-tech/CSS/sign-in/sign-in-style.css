@@ -2,29 +2,24 @@
 
 :root {
     --primary-grey: rgb(54, 57, 63);
-    --primary-black: #000;
+    --secondary-grey: rgb(216, 216, 216);
     --primary-white: #eee;
-    --secondary-grey: rgb(235, 232, 232);
-    --primary-orange: #e27d60;
-    --primary-blue: #85dcb8;
-    --secondary-orange: #e8a87c;
-    --primary-pink: #c38d9e;
-    --secondary-blue: #41b3a3;
+    --primary-black: #000;
+    --primary-orange: rgb(255, 128, 0);
+    --secondary-orange: rgb(255, 151, 46);
+    --primary-blue: dodgerblue;
+    --secondary-blue: rgb(50, 224, 196);
 }
 
 * {
     font-family: Poppins;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    background-color: var(--primary-orange);
 }
 
 header {
@@ -40,22 +35,16 @@ header {
 header a {
     float: left;
     text-align: center;
-    padding: 14px;
+    padding: 10px;
     color: var(--primary-white);
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
     transition: 0.36s;
     border-radius: 8px;
 }
 
-@media screen and (max-width: 800px) {
-    header a {
-        transition: 1s;
-    }
-}
-
-header a:hover {
-    background: var(--primary-black);
+header a:last-child {
+    background-color: var(--primary-black);
 }
 
 header #nav-right {
@@ -102,6 +91,8 @@ input {
     padding-top: 2.5px;
     padding-bottom: 2.5px;
     margin-bottom: 15px;
+    border: 1px solid var(--primary-black);
+    border-radius: 3px;
 }
 
 @media screen and (max-width: 600px) {
@@ -122,6 +113,7 @@ button, #make-account {
     border: none;
     border-radius: 5px;
     transition: 0.4s;
+    color: var(--primary-white);
 }
 
 @media screen and (max-width: 600px) {
@@ -150,15 +142,16 @@ h4 {
 #make-account {
     text-decoration: none;
     font-size: 15px;
-    color: var(--primary-black);
+    color: var(--primary-white);
 }
 
 footer {
     text-align: center;
-    padding: 10%;
+    padding: 0.7%;
     color: var(--primary-white);
     font-size: 20px;
     font-weight: 500;
+    font-size: 13px;
     background-color: var(--primary-grey);
 }
 

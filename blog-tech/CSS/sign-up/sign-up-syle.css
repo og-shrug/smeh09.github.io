@@ -2,29 +2,24 @@
 
 :root {
     --primary-grey: rgb(54, 57, 63);
-    --primary-black: #000;
+    --secondary-grey: rgb(216, 216, 216);
     --primary-white: #eee;
-    --secondary-grey: rgb(235, 232, 232);
-    --primary-orange: #e27d60;
-    --primary-blue: #85dcb8;
-    --secondary-orange: #e8a87c;
-    --primary-pink: #c38d9e;
-    --secondary-blue: #41b3a3;
+    --primary-black: #000;
+    --primary-orange: rgb(255, 128, 0);
+    --secondary-orange: rgb(255, 151, 46);
+    --primary-blue: dodgerblue;
+    --secondary-blue: rgb(50, 224, 196);
 }
 
 * {
     font-family: Poppins;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0;
     box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-body {
-    background-color: var(--primary-orange);
 }
 
 header {
@@ -40,22 +35,16 @@ header {
 header a {
     float: left;
     text-align: center;
-    padding: 14px;
+    padding: 10px;
     color: var(--primary-white);
     text-decoration: none;
-    font-size: 17px;
+    font-size: 14px;
     transition: 0.36s;
     border-radius: 8px;
 }
 
-@media screen and (max-width: 800px) {
-    header a {
-        transition: 1s;
-    }
-}
-
-header a:hover {
-    background: var(--primary-black);
+header a:last-child {
+    background-color: var(--primary-black);
 }
 
 header #nav-right {
@@ -87,7 +76,7 @@ main {
     }
 }
 
-#sign-in-form {
+#sign-up-form {
     text-align: center;
     margin-bottom: 50px;
 }
