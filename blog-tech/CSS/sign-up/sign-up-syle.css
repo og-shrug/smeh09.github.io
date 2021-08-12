@@ -43,10 +43,6 @@ header a {
     border-radius: 8px;
 }
 
-header a:last-child {
-    background-color: var(--primary-black);
-}
-
 header #nav-right {
     float: right;
 }
