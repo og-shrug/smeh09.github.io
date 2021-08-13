@@ -107,6 +107,9 @@ main {
         display: block;
         text-align: center;
     }
+    #get-started-top-image {
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 500px) {
