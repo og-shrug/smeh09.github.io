@@ -144,8 +144,14 @@ main {
     }
 }
 
-button {
-    padding: 2px;
+.blog-details {
+    margin-bottom: 20px;
+}
+
+button, #back-button {
+    text-decoration: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
     padding-right: 10px;
     padding-left: 10px;
     background-color: var(--primary-blue);
@@ -153,6 +159,25 @@ button {
     border-radius: 10px;
     color: var(--primary-white);
     margin-left: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#back-button {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#back {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button:hover, #back-button:hover {
+    box-shadow: 1px 2px 3px var(--primary-black);
 }
 
 footer {
@@ -163,6 +188,7 @@ footer {
     font-weight: 500;
     font-size: 13px;
     background-color: var(--primary-grey);
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 400px) {
