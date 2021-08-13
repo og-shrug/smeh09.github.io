@@ -138,10 +138,6 @@ a {
     text-align: left;
 }
 
-.blog:hover {
-    transform: translate(0, -5px)
-}
-
 @media screen and (min-width: 1600px) {
     .blog-image {
         height: 300px;
