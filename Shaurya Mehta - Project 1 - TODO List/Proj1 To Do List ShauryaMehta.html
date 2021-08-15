@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO DO List - by Shaurya Mehta</title>
+        <link rel="stylesheet" href="./CSS/mystyle.css">
+        <script src = "./JS/myscript.js">
+        </script>
+
+    </head>
+    <body onload="showAllTasks()">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                </div>
+                <div class="title">
+                    My To Do List
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+            <!--TO DO LIST-->
+            <br/>
+            <div class="todowrapper">
+                <p class="content">
+                   Welcome to the website for managing your todo list!
+                </p>
+                <p class="content">
+                    You can manage your task by creating new tasks. The tasks once completed can be marked as "Done". If tasks are no longer valid you can remove them as well. 
+                 </p>
+                 <p class="content">
+                    Have fun!
+                 </p>
+ 
+                <div class="Add_button">
+                    <input type="button" onclick="add()" value="Add" class="mybutton"/>
+                </div>
+                <br/>
+                <div class="To_Do_List">
+                    <table width="100%" cellspacing = "0" cellpadding="10">
+                        <thead>
+                            <th class="thcss">Date</th>
+                            <th class="thcss">Task</th>
+                            <th class="thcss" colspan="2">Action</th>
+                        </thead>
+                        <tbody id="tasklisttbl">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <footer>
+                &copy; Shaurya Mehta - 2020-21
+            </footer>
+    </body>
+</html>

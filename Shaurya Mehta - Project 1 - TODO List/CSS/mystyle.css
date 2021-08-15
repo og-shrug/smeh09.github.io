@@ -1,0 +1,114 @@
+*{
+    font-family: sans-serif;
+    font-weight:300;
+}
+body, ul, li{
+    margin:0;
+    padding:0;
+}
+p, li, h1, h2, h3, h4{
+    color:darkslategrey;
+}
+body{
+    
+}
+.wrapper{
+    width:96%;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 2%;
+}
+header{
+    background-color: papayawhip;
+    padding:10px 0;
+}
+.logo{
+    margin:0;
+    background: url("../Images/Logo image.png");
+    background-size:70px 70px;
+    float:left;
+    width:70px;
+    height:70px;
+}
+header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header nav{
+    float:right;
+}
+
+header nav li{
+    list-style-type:none;
+    float:left;
+    margin-left:20px;
+    margin-top:20px;
+}
+header nav li a{
+    text-decoration:none;
+    color:darkslategrey;
+    font-size:15px;
+    text-transform: uppercase;
+}
+
+header .title{
+    text-align: center;
+    color:darkslategray;
+    font-size: 50px;
+}
+
+.Add_button{
+    text-align: center;
+}
+
+.mybutton{
+    background-color: #0070d2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.mybutton_x{
+    background-color: #c23934;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tdcss{
+    border-bottom:1px solid #d8d2d2;
+    text-align : center;
+}
+
+.thcss{
+    border-bottom:1px solid darkgray;
+    border-top:1px solid darkgray;
+    text-align : center;
+    font-weight:bold;
+}
+
+footer{
+    background-color: #e1e8e8;
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size:small;
+    text-align: center;
+}
+.content{
+    padding: 10px;
+    color:#5876a3;
+}
